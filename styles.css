@@ -50,11 +50,16 @@ header img {
 }
 
 tr.days th{
-  width: 4px;
-  font-size: 8px;
+  max-width: 1px;
+  font-size: 10px;
   writing-mode: vertical-rl;
   text-orientation: sideways-right;
   -webkit-writing-mode: vertical-rl;
   -ms-writing-mode: vertical-rl;
   -webkit-text-orientation: sideways-right;
+}
+#days,#months{
+  color: gray;
+}
+#a{
 }
