@@ -35,6 +35,7 @@ header img {
   background-color: #f9f9f9;
 }
 .num{
+  line-height: 3px;
   width: 5px;
   font-size: 10px;
   writing-mode: vertical-rl;
@@ -61,5 +62,9 @@ tr.days th{
 #days,#months{
   color: gray;
 }
-#a{
+.left{
+  width: 103px;
+  font-size: 13px;
+  font-weight: bolder;
+  line-height: 4px;
 }
