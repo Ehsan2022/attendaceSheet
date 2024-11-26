@@ -39,7 +39,7 @@ body {
   font-size: 14px;
 }
 
-tr.days th {
+tr.date th {
   max-width: 1px;
   font-size: 10px;
   writing-mode: vertical-rl;
