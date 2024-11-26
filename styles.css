@@ -74,3 +74,9 @@ tr.days th{
   font-size: 12px;
   font-weight: bolder;
 }
+img{
+  width: 100px;
+}
+p{
+  line-height: 4px;
+}
