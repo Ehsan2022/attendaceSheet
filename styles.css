@@ -1,6 +1,7 @@
-/* General Styles */
+/** @format */
+
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   background-color: #ffffff;
   margin: 0;
@@ -9,32 +10,17 @@ body {
 
 .sheet-container {
   max-width: 1500px;
-  margin: 20px auto;
   background-color: #fff;
-  padding: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-/* Header Section */
-header p {
-  margin: 0;
-}
-
-header img {
-  max-height: 80px;
-}
-
-/* Info Table */
 .table {
   margin-bottom: 0;
 }
 
-
-
 .attendance-table tbody tr:nth-child(even) {
   background-color: #f9f9f9;
 }
-.num{
+.num {
   line-height: 3px;
   width: 5px;
   font-size: 10px;
@@ -44,13 +30,16 @@ header img {
   -ms-writing-mode: vertical-rl;
   -webkit-text-orientation: sideways-right;
 }
- .sn , .ln , .fn , .id{
+.sn,
+.ln,
+.fn,
+.id {
   width: 70px;
   height: 100px;
   font-size: 14px;
 }
 
-tr.days th{
+tr.days th {
   max-width: 1px;
   font-size: 10px;
   writing-mode: vertical-rl;
@@ -59,24 +48,26 @@ tr.days th{
   -ms-writing-mode: vertical-rl;
   -webkit-text-orientation: sideways-right;
 }
-#days,#months{
+#days,
+#months {
   color: gray;
 }
-.left{
+.left {
   width: 100px;
   font-size: 13px;
   font-weight: bolder;
   line-height: 4px;
 }
 
-.students{
+.students {
   line-height: 5px;
   font-size: 12px;
   font-weight: bolder;
+  text-align: right;
 }
-img{
+img {
   width: 100px;
 }
-p{
+p {
   line-height: 4px;
 }
