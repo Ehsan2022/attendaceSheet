@@ -24,7 +24,7 @@
                     </tr>
                     <tr>
                         <td class="left">کریدت</td>
-                        <td >
+                        <td>
                             <select style="border: none;text-align:center ; width: 21%;" name="credit" id="creditInput">
                                 <option value="0">تعداد</option>
                                 <option value="1">1</option>
@@ -82,22 +82,10 @@
                         <td rowspan="5" class="align-middle ln"> تخلص</td>
                         <td rowspan="5" class="align-middle fn">اسم پدر</td>
                     </tr>
-                    <tr class="date" id="months">
-
-                        <th rowspan="4">کارخانگی</th>
-                        <th rowspan="4">حاضر</th>
-                        <th rowspan="4">غیر حاضر</th>
-                        <th rowspan="4">نتیجه</th>
-                    </tr>
-                    <tr class="date" id="days">
-
-                    </tr>
-                    <tr class="date" id="weeks">
-
-                    </tr>
-                    <tr class="date" id="number">
-
-                    </tr>
+                    <tr class="date" id="months"></tr>
+                    <tr class="date" id="days"> </tr>
+                    <tr class="date" id="weeks"></tr>
+                    <tr class="date" id="number"></tr>
                 </thead>
                 <tbody>
                     <tr class="students">
@@ -280,7 +268,7 @@
         const days = document.getElementById("days");
         const weeks = document.getElementById("weeks");
         const number = document.getElementById("number");
-        // Function to update the table dynamically based on the input
+        // Function to update the table dynamically based on the input(credit)
         creditInput.addEventListener("input", function () {
             months.innerHTML = "";
             days.innerHTML = "";
@@ -293,33 +281,33 @@
                 for (let i = 1; i <= num; i++) {
                     const monthCell = document.createElement("th");
                     monthCell.textContent = `ماه`;
-                    months.append(monthCell);
+                    months.appendChild(monthCell);
                 }
                 for (let i = 1; i <= num; i++) {
                     const dayCell = document.createElement("th");
                     dayCell.textContent = `روز`;
-                    days.append(dayCell);
+                    days.appendChild(dayCell);
                 }
                 for (let i = 1; i <= num; i++) {
                     const weekCell = document.createElement("th");
                     weekCell.textContent = `شنبه`;
-                    weeks.append(weekCell);
+                    weeks.appendChild(weekCell);
                 }
                 for (let i = 1; i <= num; i++) {
                     const numberCell = document.createElement("th");
                     numberCell.textContent = `(...)`;
-                    number.append(numberCell);
+                    number.appendChild(numberCell);
                 }
                 //  خانه های حاضری
                 const studentRows = document.querySelectorAll(".students");
                 studentRows.forEach(row => {
                     while (row.children.length > 5) {
-                        row.remove(row.lastChild);
+                        row.removeChild(row.lastChild);
                     }
                     for (let i = 1; i <= num; i++) {
                         const emptyCell = document.createElement("td");
                         emptyCell.textContent = "";
-                        row.append(emptyCell);
+                        row.appendChild(emptyCell);
                     }
                 });
             }
